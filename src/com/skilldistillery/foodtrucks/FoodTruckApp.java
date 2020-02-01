@@ -38,7 +38,7 @@ public class FoodTruckApp {
 				System.out.println("The average rating of all trucks is: " + averageRating);
 				System.out.println();
 			} else if (choice == 3) { // display highest rated
-				System.out.println("The highest rated truck(s) is " + highestRated(finalTruckArray));
+				highestRated(finalTruckArray);
 				System.out.println();
 			} else if (choice == 4) { // quit
 				System.out.println("Thanks for using Food Truck App!");
