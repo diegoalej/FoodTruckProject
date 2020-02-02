@@ -16,7 +16,7 @@ public class FoodTruckApp {
 	}
 
 	// Method displays the menu choices and filters response according to input
-		private void showMenu(FoodTruck[] finalTruckArray, Scanner input) {
+	private void showMenu(FoodTruck[] finalTruckArray, Scanner input) {
 		while (true) {
 			System.out.println("Enter any integer 1 - 4 to select the items below: ");
 			System.out.println("1: List all food trucks\n2: See the average rating of all food trucks");
@@ -110,7 +110,7 @@ public class FoodTruckApp {
 	}
 
 	// Method rounds numbers to the nearest tenth
-	public static double roundTwoDecimals(double roundedNum) {
+	public double roundTwoDecimals(double roundedNum) {
 		roundedNum = Math.round(roundedNum * 10);
 		roundedNum /= 10;
 		return roundedNum;
