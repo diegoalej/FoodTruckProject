@@ -3,7 +3,7 @@ package com.skilldistillery.foodtrucks;
 import java.util.Scanner;
 
 public class FoodTruckApp {
-	// Main method makes use of getInfo() to get initial FoodTruck input array,
+	// Main method makes use of getInfo() to get initial FoodTruck[] input array,
 	// The array is then trimmed to exclude null objects using notNull().
 	// showMenu() then runs the rest of the application
 	public static void main(String[] args) {
@@ -98,8 +98,14 @@ public class FoodTruckApp {
 			}
 			System.out.print("Please enter the food type for truck number " + (i + 1) + ": ");
 			String tFoodType = input.nextLine();
-			System.out.print("Please enter the star rating of truck " + (i + 1) + "\nAny double from 1 - 10: ");
-			double rating = roundTwoDecimals(input.nextDouble());
+			double rating = -1;
+			do {
+				System.out.print("Please enter the star rating of truck " + (i + 1) + "\nAny double from 0 - 10: ");
+				rating = roundTwoDecimals(input.nextDouble());
+				if (rating < 0 || rating > 10) {
+					System.out.println("Rating out of bounds, try again.");
+				}
+			} while	(rating < 0 || rating > 10);
 			allTrucks[i] = new FoodTruck(tName, rating, tFoodType);
 			input.nextLine();
 			if(i == 4) {
