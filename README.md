@@ -1,6 +1,6 @@
-## Food Truck Project 
+## Food Truck Project ## 
 
-###Overview
+### Overview ###
 
 The Food Truck application stores data as objects and lets user access a menu according to input
 
@@ -10,14 +10,14 @@ The Food Truck application stores data as objects and lets user access a menu ac
 * The menu continues displaying information based on Objects array until the user prompts to quit.
 * Any double amounts entered for Food Truck rating are rounded to the nearest tenth.
 
-###Technologies Used
+### Technologies Used ###
 
 * Java
 * Eclipse
 * Git/GitHub
 * Terminal
 
-###Lessons Learned
+### Lessons Learned ###
 
 * I learned variable scope and encapsulation
 * I learned about constructors and setters/getters
